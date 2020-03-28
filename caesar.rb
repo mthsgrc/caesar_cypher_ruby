@@ -26,12 +26,9 @@ def str_to_encrypt(word, pass)
   end
 
   encrypted = encrypted.join("")
-  p encrypted
+  puts encrypted
 
 end
-
-str_to_encrypt("abc xyz ABC XYZ", 1)
-
 
 puts "Insert your word to cypher: "
 user_word = gets.chomp
