@@ -37,7 +37,7 @@ user_word.to_s
 puts "Insert a Integer for cypher: "
 user_cypher = gets.chomp
 
-while user_cypher.to_i == 0
+while user_cypher.to_i <= 0
   puts "Insert a Integer for cypher: "
   user_cypher = gets.chomp
 end
