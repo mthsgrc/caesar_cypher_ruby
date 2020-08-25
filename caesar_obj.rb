@@ -10,6 +10,10 @@ class Caesar
     downcase = Array("a".."z")
     upcase = Array("A".."Z")
 
+    if @pass > 26
+    	@pass = @pass % 26
+    end
+
     to_encrypt_array = @word.split("")
     encrypted = []
     to_encrypt_array.each do |letter|
@@ -39,6 +43,9 @@ class Caesar
   end
 end
 
-sentence = Caesar.new("What a string!", 5)
+
+puts "Insert a word to cypher:"
+sentence = 
+sentence = Caesar.new("What a string!", 52)
 sentence.str_to_encrypt
 p sentence.word

@@ -2,6 +2,10 @@ def str_to_encrypt(word, pass)
   downcase = Array("a".."z")
   upcase = Array("A".."Z")
 
+  if pass > 26
+    pass = pass % 26
+  end
+
   to_encrypt_array = word.split("")
   encrypted = []
   to_encrypt_array.each do |letter|
